@@ -1,0 +1,73 @@
+<html>
+    <meta charset="UTF-8">
+
+    <script>
+        function pularLinha (){
+            document.write("<br><br>")
+        }
+
+        function criarFrase (string1, string2) {
+            var frase = string1 + string2;
+            document.write(frase);
+        }
+        criarFrase("- Bonjour, ", "Monde!");
+
+        pularLinha();
+        
+        function criarSaudacao (nome) {
+            document.write("- Bonjour, "+ nome + ".<br>" + "Ça va, " + nome + "?");
+        }
+        criarSaudacao("Jérémie");
+
+        pularLinha();
+
+        document.write("- Quel est le reste de la division de 5 divisé par 9?<br>")
+
+        function restoDivisao (numero) {
+            var resto = 9 % numero;
+            document.write("- Le reste de "+ numero + " divisé par 9 est " + resto + ".");
+        }
+        restoDivisao(5);
+
+        pularLinha();
+
+        document.write("- Quel est ton âge, Jéremie?<br> - J'ai 29 ans.<br>");
+
+        function dirigir (idadePessoa, idadePermitida) {
+            if (idadePessoa < idadePermitida) {
+                document.write("- Tu ne peux pas conduire,");
+            }
+            if (idadePessoa >= idadePermitida) {
+                document.write("- Tu peux conduire,");
+            }
+        }
+        dirigir(29,18);
+
+        function beber (idadeUsuario, idadeBebida) {
+            if (idadeUsuario < idadeBebida) {
+                document.write(" ni boire de l'alcool.");
+            }
+            if (idadeUsuario >= idadeBebida) {
+                document.write(" et boire de l'alcool aussi, mais je le savais dejà.");
+            }
+        }
+        beber(29,18);
+
+        pularLinha();
+
+        function semaforo (cor) {
+            if (cor == "verde") {
+                document.write("Continuez!");
+            }
+            if (cor == "amarelo"); {
+            document.write("Il faut freiner!")
+            }
+            if (cor == "vermelho") {
+                document.write("Arrêtez!")
+            }
+        }
+        semaforo("amarelo");
+
+    </script>
+    
+</html>

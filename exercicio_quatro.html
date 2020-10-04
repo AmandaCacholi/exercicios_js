@@ -3,24 +3,37 @@
         <meta charset="UTF8">
     </head>
     <script>
-        function divisaoLaranjas(numeroLaranjas, numeroVizinhos) {
-            var resultado = numeroLaranjas / numeroVizinhos;
-            return resultado;
-        }
-        divisaoLaranjas()
-
-        function totalLaranjas() {
-
+        function pulaLinha(){
+            document.write("<br>");
         }
 
-        function calculadora (custo, valor) {
-            var lucro = custo / valor;
-            var imposto = valor * 8.9%;
+        document.write("<h3>Calculadora de Joselito</h3>");
+
+        function distribuiLaranjas (numeroLaranjas, numeroVizinhos) {
+            var laranjasPorVizinhos = numeroLaranjas / numeroVizinhos;
+            return Math.trunc(laranjasPorVizinhos);
         }
-        calculadora()
+        distribuiLaranjas(56, 6);
+        document.write("O número de laranjas por vizinhos é: " + distribuiLaranjas(56, 6));
 
-        var pizza = ;
+        pulaLinha();
 
-        document.write (" Para a pizza " + pizza + " o lucro líquido é de R$ " + lucro + " e o imposto é de "+ imposto + ".");
+        function sobraLaranjas (numeroLaranjas, numeroVizinhos) {
+            var sobra = numeroLaranjas % numeroVizinhos;
+            return sobra;
+        }
+        sobraLaranjas(56, 6);
+        document.write("Sobram " + sobraLaranjas(56, 6) + " laranjas.");
+
+        document.write("<h3>Pizzaria Resilia</h3>");
+
+        function calcular(custoPizza, valorPizza){
+            var nomePizza = "calabresa";
+            var imposto = valorPizza * 0.082;
+            var lucroLiquido = valorPizza - custoPizza - imposto;
+            document.write("Para a pizza " + nomePizza + " o lucro líquido é de R$ " + lucroLiquido + " e o imposto é de R$ " + Math.round(imposto));
+
+        }
+        calcular(20, 50);
     </script>
 </html>

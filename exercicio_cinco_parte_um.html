@@ -21,7 +21,9 @@
 
         pularLinha();
 
-        document.write("- Quel est le reste de la division de 5 divisé par 9?<br>")
+        var nome = "Jérémie"
+
+        document.write("- Quel est le reste de la division de 5 divisé par 9, " + nome + "?<br>");
 
         function restoDivisao (numero) {
             var resto = 9 % numero;
@@ -31,7 +33,7 @@
 
         pularLinha();
 
-        document.write("- Quel est ton âge, Jéremie?<br> - J'ai 29 ans.<br>");
+        document.write("- Quel est ton âge, " + nome + "?<br> - J'ai 29 ans.<br>");
 
         function dirigir (idadePessoa, idadePermitida) {
             if (idadePessoa < idadePermitida) {
@@ -55,12 +57,14 @@
 
         pularLinha();
 
+        document.write("- Quelle est la couleur du feu de signalisation? <br> - Jaune, ")
+
         function semaforo (cor) {
             if (cor == "verde") {
                 document.write("Continuez!");
             }
             if (cor == "amarelo"); {
-            document.write("Il faut freiner!")
+            document.write("il faut freiner!")
             }
             if (cor == "vermelho") {
                 document.write("Arrêtez!")

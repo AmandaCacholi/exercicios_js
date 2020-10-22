@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+    </head>
+    <body>
+        <script>
+            var botao = document.createElement("button");
+            botao.innerText="Eu sou um botão";
+            document.body.append(botao);
+
+            botao.onmouseover = function(){
+                botao.textContent=("Não me toque!")
+            }
+
+            botao.onmouseout = function(){
+                botao.textContent=("Eu sou um botão")
+            }
+
+            botao.onclick = function(){
+                botao.textContent=("Me solta!")
+            }
+
+            botao.onmouseup = function(){
+                botao.textContent=("Eu sou um botão")
+            }
+        </script>
+    </body>
+</html>

@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+</head>
+
+<body>
+  <script>
+    let carro = {
+      rodas: ["fe", "fd", "te", "td"],
+      portas:["fe", "fd", "te", "td"],
+      volante: 1,
+      acentos: ["motorista", "passageiro", "banco de trás"],
+      motor: 1,
+      farois: ["fe", "fd", "te", "td"],
+      portamalas: 1,
+      janelas: ["fe", "fd", "te", "td"],
+      parabrisas: ["frente", "atras"],
+      pedais: ["acelera", "freio", "embreagem"],
+      alavanca: ["cima", "baixo", "esquerda", "direita"],
+      freiodemao: 1,
+      cor: "preto",
+
+      liga: function () {
+        console.log("Carro ligado")
+      },
+
+      desliga: function () {
+        console.log("Carro desligado")
+      },
+
+      acelera: function () {
+        console.log("Carro anda")
+      },
+
+      freio: function () {
+        console.log("Diminui velocidade")
+      },
+
+      buzina: function () {
+        console.log("bi bi")
+      },
+    };
+
+    console.log(carro);
+
+    console.log(carro.cor);
+
+    carro.buzina();
+  </script>
+</body>
+
+</html>

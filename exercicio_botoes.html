@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+    </head>
+    <body>
+        <script>
+            let body = document.querySelector("body");
+
+            function criaBotao () {
+                for (let i=1; i <= 20; i++){
+                    let button = document.createElement("button");
+                    document.body.appendChild(button);
+                    button.innerHTML = `Botão ${i}`;
+                }
+            }
+
+            criaBotao();
+        </script>
+    </body>
+</html>

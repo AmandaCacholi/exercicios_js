@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+    </head>
+    <body>
+        <script>
+            function somaMultiplos (numero){
+                let multiplicador3e5 = 0;
+
+                for (let i = 0; i < numero; i++){
+                    if (i % 3 == 0 || i % 5 == 0){
+                        multiplicador3e5 += i;
+                    }
+                }
+                return multiplicador3e5;
+            }
+            console.log(somaMultiplos(23));
+        </script>
+    </body>
+</html>

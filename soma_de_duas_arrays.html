@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+    </head>
+    <body>
+        <script>
+            let arr = [1, 2, 3];
+            let arr2 = [4, 4, 4];
+
+            function somaArray (arr, arr2) {
+                let somaArray1 = 0;
+                for (let i = 0; i < arr.length; i++){
+                    let numeros1 = arr[i];
+                    somaArray1 += numeros1;
+                }
+                let somaArray2 = 0;
+                for (let i = 0; i < arr2.length; i++){
+                    let numeros2 = arr2[i];
+                    somaArray2 += numeros2;
+                }
+                return somaArray1 + somaArray2;
+
+            } 
+            console.log(somaArray(arr, arr2));
+        </script>
+    </body>
+</html>

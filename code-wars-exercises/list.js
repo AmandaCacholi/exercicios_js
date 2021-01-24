@@ -19,43 +19,25 @@ let list0 = ([])
 // returns ''
 
 function list(names){
-    if (names.length == 0){
-        return ""
-    }
-
-    if (names.length == 1){
-        return names[0].name
-    }
-
-    if (names.length == 2){
-        return names[0].name + " & " + names[1].name
-    }
-
-    if (names.length == 3){
-        return names[0].name + ", " + names[1].name + " & " + names[2].name
-    }
-
-    if (names.length >= 4){
-
+    if (names.length == 0) return ""
+    if (names.length == 1){return names[0].name}
+    if (names.length == 2){return names[0].name + " & " + names[1].name}
+    if (names.length >= 3)
+    {
         let arrNames = []
-        for (let i = 1; i < names.length-2; i++){
-            arrNames.push(`${names[i].name}`)
-
-            
+        for (let i = 0; i < names.length-2; i++)
+        {
+            arrNames.push(names[i].name)
         }
-
         let stringNames = arrNames.toString().replace(/,/g,", ")
 
-        let firstName = names[0].name
         let lastName = names[names.length-1].name
         let secondToLastName = names[names.length-2].name
         let twoLastNames = secondToLastName + " & " + lastName
-
-        let allNames = firstName + ", " + stringNames + ", " + twoLastNames
-
-
+        let allNames = stringNames + ", " + twoLastNames
+        
         return allNames
     }
 }
 
-console.log(list(list7))
+console.log(list(list3))

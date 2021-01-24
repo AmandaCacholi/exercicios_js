@@ -1,20 +1,13 @@
 let list7 = ([ {name: 'Bart'}, {name: 'Lisa'}, {name: 'Maggie'}, {name: 'Homer'}, {name: 'Merge'}, {name: 'Amanda'}, {name: 'Marcus'} ])
-
 let list6 = ([ {name: 'Bart'}, {name: 'Lisa'}, {name: 'Maggie'}, {name: 'Homer'}, {name: 'Merge'}, {name: 'Amanda'} ])
-
 let list5 = ([ {name: 'Bart'}, {name: 'Lisa'}, {name: 'Maggie'}, {name: 'Homer'}, {name: 'Merge'} ])
-
 let list4 = ([ {name: 'Bart'}, {name: 'Lisa'}, {name: 'Maggie'}, {name: 'Homer'} ])
-
 let list3 = ([ {name: 'Bart'}, {name: 'Lisa'}, {name: 'Maggie'} ])
 // returns 'Bart, Lisa & Maggie'
-
 let list2 = ([ {name: 'Bart'}, {name: 'Lisa'} ])
 // returns 'Bart & Lisa'
-
 let list1 = ([ {name: 'Bart'} ])
 // returns 'Bart'
-
 let list0 = ([])
 // returns ''
 

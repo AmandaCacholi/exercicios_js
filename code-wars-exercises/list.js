@@ -18,7 +18,8 @@ let list1 = ([ {name: 'Bart'} ])
 let list0 = ([])
 // returns ''
 
-function list(names){
+function list(names)
+{
     if (names.length == 0) return ""
     if (names.length == 1){return names[0].name}
     if (names.length == 2){return names[0].name + " & " + names[1].name}
@@ -35,7 +36,7 @@ function list(names){
         let secondToLastName = names[names.length-2].name
         let twoLastNames = secondToLastName + " & " + lastName
         let allNames = stringNames + ", " + twoLastNames
-        
+
         return allNames
     }
 }

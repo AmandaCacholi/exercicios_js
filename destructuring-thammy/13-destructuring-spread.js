@@ -6,7 +6,8 @@ const clothes = {
     socks: { colors: ['beige', 'gray'] },
 };
 
-const {shirts:{colors}} = clothes
+const {shirts:{colors:[...cor]}} = clothes
+const {socks:{colors:[...cor2]}} = clothes
 
 
-console.log(colors)
+console.log(cor, cor2)

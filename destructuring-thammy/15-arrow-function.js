@@ -5,4 +5,6 @@ var persons = [
     { firstname: 'Jayne', lastname: 'Cobb' },
   ];
 
-  
+const nomeCompleto = persons.map((cada)=>cada.firstname+" "+cada.lastname)
+
+console.log(nomeCompleto)

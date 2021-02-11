@@ -19,9 +19,9 @@ company = {
     },
   };
 
-const getShirtsColorsAmount = (...company) =>{
-    const colors = company.products.shirts.colors;
-    return colors.length
+const getShirtsColorsAmount = (company) =>{
+    const {products:{shirts:{colors}}} = company
+    return colors
 }
 
 console.log(getShirtsColorsAmount(company))
